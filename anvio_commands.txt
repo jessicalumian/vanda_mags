@@ -5,7 +5,7 @@ do
 	anvi-script-FASTA-to-contigs-db $i
 done
 
-# Run Campbell db after downloading
+# Run Campbell db after downloading (from https://groups.google.com/g/anvio/c/wNf4H4X-R2A/m/iGY4itZjBwAJ)
 
 for i in *db
 do
