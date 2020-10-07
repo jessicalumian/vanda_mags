@@ -1,3 +1,13 @@
+# 1. Run command line blast, but output is only amino acids
+# 2. New script that creates file:
+#	line 1: filename (basename to remove acpa and ending for sequence names)
+#	line 2: amino acids
+
+# example:
+# >APphormidesmispriestleyiANA
+# MSIVTKSIVNADAEARYLSPGELDRIKSFVTSGERRVRIAQVLTESRERIVKTAGDQLFQKRPDVVSPGGNAYGEEMTATCLRDMDYYLRLITYGVVAGDVTPIEEIGLVGAREMYNSLGTSIPAMADSIRCMKNVATGMMSGDEAAEAASYFDYVVGGLQ
+
+
 # create custom blast db with gene of interest (in this case acpa)
 
 makeblastdb -in /Users/jessicamizzi/Documents/Work/research/vanda_mags/phycobilisome_trees/reference_sequences/apca.fa -input_type fasta -title apcA_db -out apcA_db_out -dbtype prot
