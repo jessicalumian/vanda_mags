@@ -51,10 +51,10 @@ do
 	base=$(basename $filename _1e-80_apca.out)
 	echo $filename
 	echo $base
-	echo '>${base}' >> apca_prealign.fa 
+	echo '>'${base} >> apca_prealign.fa 
 	
 	# add amino acid alignment as next line
-	cat filename | >> apca_prealign.fa 
+	cat $filename >> apca_prealign.fa 
 	
 done
 
