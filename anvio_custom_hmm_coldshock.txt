@@ -1,9 +1,9 @@
 # Database for all contigs already made, external-genomes.txt file already made
 
-for i in *fa
+for i in *db
 do
     # use basename for easier file naming
-    base=$(basename $i .fa)
+    base=$(basename $i .db)
     
     anvi-get-sequences-for-hmm-hits -c $i --hmm-source coldshock_hmm
     -o ${base}-sequences-for-hmm-hits.fa
