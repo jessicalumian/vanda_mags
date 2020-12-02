@@ -5,7 +5,6 @@ do
     # use basename for easier file naming
     base=$(basename $i .db)
     
-    anvi-get-sequences-for-hmm-hits -c $i --hmm-source coldshock_hmm
-    -o ${base}-sequences-for-hmm-hits.fa
+    anvi-get-sequences-for-hmm-hits -c $i --hmm-source coldshock_hmm -o ${base}-sequences-for-hmm-hits.fa
 
 done
