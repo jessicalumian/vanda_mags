@@ -2,7 +2,7 @@
 
 for i in *db
 do
-    anvi-run-hmms -c $i -H coldshock-hmm/
+    anvi-run-hmms -c $i -H coldshock_hmm/
 done
 
 for
