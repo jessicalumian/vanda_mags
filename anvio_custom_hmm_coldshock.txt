@@ -5,8 +5,6 @@ do
     anvi-run-hmms -c $i -H coldshock_hmm/
 done
 
-for
-
 for i in *db
 do
     # use basename for easier file naming
