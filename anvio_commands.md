@@ -15,6 +15,12 @@ module load anvio/6.2-bio3
 source activate anvio-6.2
 ```
 
+Get into anvi'o directory for this workflow
+```text
+mkdir /home/jemizzi/chapter_2/anvio_circadian
+cd /home/jemizzi/chapter_2/anvio_circadian
+```
+
 #### Step 1: Obtain data
 Put fasta files of MAGs of interested into a directory. In this case I'm using 4 novel Vanda MAGs, my Phormidium pseudopriestleyi MAG, other polar cyanobacteria MAGs, and a few other cyanos of interest.
 
