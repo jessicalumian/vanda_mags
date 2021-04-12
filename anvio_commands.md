@@ -63,7 +63,7 @@ name		contigs_db_path
 BulkMat_35	BulkMat_35.db
 MP8IB2_15	MP8IB2_15.db
 ```
-Also, file names can't contain periods.
+Also, file names can't contain periods. The file I made is here: [external-genomes.txt](https://github.com/jessicalumian/vanda_mags/blob/master/external-genomes-circadian.txt).
 
 # Old code:
 # Make database for all .fa files
