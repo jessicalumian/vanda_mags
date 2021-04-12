@@ -34,7 +34,7 @@ OtherMAGsHere.fa
 anvi'o will make files that end in `.db` which contain information about the MAGs that will allow it to analyze the MAGs.
 
 ```text
-for i in `ls *fa | awk 'BEGIN{FS=".fa"}{print $1}'` # all files in data directory must end in .fa
+for i in `ls /home/jemizzi/chapter_2/input/*fa | awk 'BEGIN{FS=".fa"}{print $1}'` # all files in data directory must end in .fa
 do
     anvi-gen-contigs-database -f $i.fa -o $i.db
     anvi-run-hmms -c $i.db
