@@ -42,6 +42,14 @@ done
 ```
 
 #### Step 3: Create `external-genomes.txt` file.
+I've found it easiest to create the `external-genomes.txt` file in excel and then convert it to a .txt file. Just be sure to follow the formatting in the example. For `BulkMat_35.fa` and `MP8IB2_15.fa`, the file would look like this:
+
+```text
+name		contigs_db_path
+BulkMat_35	BulkMat_35.db
+MP8IB2_15	MP8IB2_15.db
+```
+Also, file names can't contain periods.
 
 # Old code:
 # Make database for all .fa files
