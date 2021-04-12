@@ -1,0 +1,12 @@
+name	contigs_db_path
+auroravandensis	auroravandensis.db
+BulkMat_35	BulkMat_35.db
+leptolyngbya_sp_BC1307	leptolyngbya_sp_BC1307.db
+MP8IB2_15	MP8IB2_15.db
+MP8IB2_171	MP8IB2_171.db
+MP9P1_79	MP9P1_79.db
+oscillatoria_acuminata_PCC6304_genome	oscillatoria_acuminata_PCC6304_genome.db
+phormidesmis_priestleyi_BC1401_genome	phormidesmis_priestleyi_BC1401_genome.db
+phormidesmispriestleyiULC007	phormidesmispriestleyiULC007.db
+phormidium_pseudopriestleyi_FRX01	phormidium_pseudopriestleyi_FRX01.db
+SynAce01	SynAce01.db
