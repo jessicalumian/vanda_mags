@@ -2,6 +2,19 @@
 
 I'm blatantly stealing the code from the [anvi'o Phylogenomics Workflow](https://merenlab.org/2017/06/07/phylogenomics/) and only including the steps that are relevant to my process for my own reference, and so I can write a SnakeMake file of this later. All code will be run in the directory of the input files, until I change this.
 
+#### Step 0: Set up Peloton
+
+Request an interactive session
+```text
+srun -p high -t 20:00:00 -u --pty bash -il
+```
+
+Load anvio module
+```text
+module load anvio/6.2-bio3
+source activate anvio-6.2
+```
+
 #### Step 1: Obtain data
 Put fasta files of MAGs of interested into a directory. In this case I'm using 4 novel Vanda MAGs, my Phormidium pseudopriestleyi MAG, other polar cyanobacteria MAGs, and a few other cyanos of interest.
 
