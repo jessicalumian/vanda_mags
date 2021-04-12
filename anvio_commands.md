@@ -34,7 +34,6 @@ OtherMAGsHere.fa
 anvi'o requires clean def lines, see [explanation here](https://merenlab.org/2016/06/22/anvio-tutorial-v2/#take-a-look-at-your-fasta-file). Clean up fastas before proceeding to avoid snarky error messages:
 
 ```text
-
 for i in `ls *fa | awk 'BEGIN{FS=".fa"}{print $1}'` # all files in data directory must end in .fa
 do
     anvi-script-reformat-fasta $i.fa -o $i-fixed.fa -l 1000 --simplify-names
