@@ -21,7 +21,7 @@ mkdir /home/jemizzi/chapter_2/anvio_circadian
 cd /home/jemizzi/chapter_2/anvio_circadian
 ```
 
-#### Step 1: Obtain data
+#### Step 1: Obtain data and fix fasta files (def lines and removing contigs <1000 nts)
 Put fasta files of MAGs of interested into a directory. In this case I'm using 4 novel Vanda MAGs, my Phormidium pseudopriestleyi MAG, other polar cyanobacteria MAGs, and a few other cyanos of interest.
 
 ```text
@@ -30,6 +30,21 @@ BulkMat_35.fa
 MP8IB2_15.fa
 OtherMAGsHere.fa
 ```
+
+anvi'o requires clean def lines, see [explanation here](https://merenlab.org/2016/06/22/anvio-tutorial-v2/#take-a-look-at-your-fasta-file). Clean up fastas before proceeding to avoid snarky error messages:
+
+```text
+
+for i in `ls *fa | awk 'BEGIN{FS=".fa"}{print $1}'` # all files in data directory must end in .fa
+do
+    anvi-script-reformat-fasta $i.fa -o $i-fixed.fa -l 1000 --simplify-names
+    # overwrite contigs with fixed contigs
+    mv $i-fixed.fa $i.fa
+done
+```
+This command also removes sequences shorter than 1000 nucleotides because anvi'o developers think this is a good idea, it makes sense to me and I trust them.
+
+
 #### Step 2: Generate anvi'o [contigs database](https://merenlab.org/software/anvio/help/main/artifacts/contigs-db/) for each fasta file.
 anvi'o will make files that end in `.db` which contain information about the MAGs that will allow it to analyze the MAGs.
 
