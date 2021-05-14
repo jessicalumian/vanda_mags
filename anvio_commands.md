@@ -66,9 +66,18 @@ MP8IB2_15	MP8IB2_15.db
 Also, file names can't contain periods. The file I made is here: [external-genomes.txt](https://github.com/jessicalumian/vanda_mags/blob/master/external-genomes-circadian.txt).
 
 #### Step 3.5: Create Custom HMMs file.
-Follow the instructions [here](https://merenlab.org/2016/05/21/archaeal-single-copy-genes/). Get HMMs by searching [eggNOG](http://eggnog5.embl.de/#/app/home). Put these files in the same directory as working directory.
+Follow the instructions [here](https://merenlab.org/2016/05/21/archaeal-single-copy-genes/). Get HMMs by searching [eggNOG](http://eggnog5.embl.de/#/app/home). Put these into a directory. In my case, I will choose `circadian_HMMs`.
 
-#### Step 4: Custom HMM search.	
+#### Step 4: Custom HMM search.
+Refer anvio to custom HMM files.
+```text
+for i in `ls *fa | awk 'BEGIN{FS=".fa"}{print $1}'` # all files in data directory must end in .fa
+do
+    anvi-run-hmms -c $i.db -H circadian_HMMs/
+done
+```
+
+Step 4: Custom HMM search.	
 Look at available sequences: (maybe get rid of this code chunk)
 ```
 anvi-get-sequences-for-hmm-hits --external-genomes external-genomes.txt \
