@@ -77,6 +77,21 @@ do
 done
 ```
 
+Get hits.
+
+```text
+for i in `ls *fa | awk 'BEGIN{FS=".fa"}{print $1}'` # all files in data directory must end in .fa
+do
+    anvi-get-sequences-for-hmm-hits --external-genomes external-genomes.txt \
+                                -o $i.concatenated-proteins.fa \
+                                --hmm-source circadian_HMMs \
+                                --return-best-hit \
+                                --get-aa-sequences \
+                                --concatenate
+done
+```
+
+Out of date notes:
 Step 4: Custom HMM search.	
 Look at available sequences: (maybe get rid of this code chunk)
 ```
