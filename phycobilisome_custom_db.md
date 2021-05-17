@@ -12,6 +12,15 @@ makeblastdb -in sasa_reference.fa -input_type fasta -title sasa_db -out sasa_db_
 makeblastdb -in rpaa_reference.fa -input_type fasta -title rpaa_db -out rpaa_db_out -dbtype prot
 ```
 
+#### Step 2: Search for each MAG
+I like to do this one by one to ensure my e value fits what I'm looking for (so I'm not getting hits that don't match the reference gene). This is possible because I'm working with a manageable number of genes and MAGs.
+
+```
+# search bin 2 from MEGAHIT (phormidium bin)
+
+blastx -db D1_db_out -query ../ANVIO_PHORMIDIUM/SAMPLES-SUMMARY/bin_by_bin/Bin_2/Bin_2-contigs.fa -evalue 1e-50 -outfmt "6 sseqid qseqid evalue pident qseq" -out bin2.out
+```
+
 ## Old Information
 
 1. Run command line blast, but output is only amino acids
