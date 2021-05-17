@@ -1,11 +1,21 @@
-# 1. Run command line blast, but output is only amino acids
-# 2. New script that creates file:
-#	line 1: filename (basename to remove acpa and ending for sequence names)
-#	line 2: amino acids
+
+## Instructions to Run a Custom BLAST Database Search
+
+#### Step 1: Obtain sequence of interest from NCBI, then make a custom blastdb
+
+makeblastdb -in reference.fa -input_type fasta -title output_db -out output_db_out -dbtype prot
+
+
+## Old Information
+
+1. Run command line blast, but output is only amino acids
+2. New script that creates file:
+	line 1: filename (basename to remove acpa and ending for sequence names)
+	line 2: amino acids
 
 # example:
-# >APphormidesmispriestleyiANA
-# MSIVTKSIVNADAEARYLSPGELDRIKSFVTSGERRVRIAQVLTESRERIVKTAGDQLFQKRPDVVSPGGNAYGEEMTATCLRDMDYYLRLITYGVVAGDVTPIEEIGLVGAREMYNSLGTSIPAMADSIRCMKNVATGMMSGDEAAEAASYFDYVVGGLQ
+>APphormidesmispriestleyiANA
+>MSIVTKSIVNADAEARYLSPGELDRIKSFVTSGERRVRIAQVLTESRERIVKTAGDQLFQKRPDVVSPGGNAYGEEMTATCLRDMDYYLRLITYGVVAGDVTPIEEIGLVGAREMYNSLGTSIPAMADSIRCMKNVATGMMSGDEAAEAASYFDYVVGGLQ
 
 
 # create custom blast db with gene of interest (in this case acpa)
