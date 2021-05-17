@@ -3,8 +3,14 @@
 
 #### Step 1: Obtain sequence of interest from NCBI, then make a custom blastdb
 
-makeblastdb -in reference.fa -input_type fasta -title output_db -out output_db_out -dbtype prot
-
+```
+makeblastdb -in kaia_reference.fa -input_type fasta -title kaia_db -out kaia_db_out -dbtype prot
+makeblastdb -in kaib_reference.fa -input_type fasta -title kaib_db -out kaib_db_out -dbtype prot
+makeblastdb -in kaic_reference.fa -input_type fasta -title kaic_db -out kaic_db_out -dbtype prot
+makeblastdb -in cika_reference.fa -input_type fasta -title cika_db -out cika_db_out -dbtype prot
+makeblastdb -in sasa_reference.fa -input_type fasta -title sasa_db -out sasa_db_out -dbtype prot
+makeblastdb -in rpaa_reference.fa -input_type fasta -title rpaa_db -out rpaa_db_out -dbtype prot
+```
 
 ## Old Information
 
