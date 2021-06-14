@@ -18,12 +18,12 @@ I like to do this one by one to ensure my e value fits what I'm looking for (so 
 ```
 # search bin 2 from MEGAHIT (phormidium bin)
 
-blastx -db kaia_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaia_bulk.out
-blastx -db kaib_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaib_bulk.out
-blastx -db kaic_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaic_bulk.out
-blastx -db cika_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/cika_bulk.out
-blastx -db sasa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/sasa_bulk.out
-blastx -db rpaa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/rpaa_bulk.out
+blastx -db kaia_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaia_bulk_1e5.out
+blastx -db kaib_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaib_bulk_1e5.out
+blastx -db kaic_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaic_bulk_1e5.out
+blastx -db cika_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/cika_bulk_1e5.out
+blastx -db sasa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/sasa_bulk_1e5.out
+blastx -db rpaa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/rpaa_bulk_1e5.out
 ```
 
 ## Old Information
