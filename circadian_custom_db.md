@@ -18,7 +18,7 @@ I like to do this one by one to ensure my e value fits what I'm looking for (so 
 ```
 # search bin 2 from MEGAHIT (phormidium bin)
 
-blastx -db D1_db_out -query ../ANVIO_PHORMIDIUM/SAMPLES-SUMMARY/bin_by_bin/Bin_2/Bin_2-contigs.fa -evalue 1e-50 -outfmt "6 sseqid qseqid evalue pident qseq" -out bin2.out
+blastx -db kaia_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/BulkMat_35.fa -evalue 1e-50 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaia_bulk.out
 ```
 
 ## Old Information
