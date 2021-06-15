@@ -18,20 +18,20 @@ I like to do this one by one to ensure my e value fits what I'm looking for (so 
 ```
 # search bin 2 from MEGAHIT (phormidium bin)
 
-blastx -db kaia_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Leptoplynga_BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaia_bulk_1e5.out
-blastx -db kaib_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Leptoplynga_BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaib_bulk_1e5.out
-blastx -db kaic_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Leptoplynga_BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaic_bulk_1e5.out
-blastx -db cika_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Leptoplynga_BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/cika_bulk_1e5.out
-blastx -db sasa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Leptoplynga_BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/sasa_bulk_1e5.out
-blastx -db rpaa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Leptoplynga_BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/rpaa_bulk_1e5.out
+blastx -db kaia_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Leptoplynga_BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out Leptolyngbya_BulkMat/kaia_bulk_1e5.out
+blastx -db kaib_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Leptoplynga_BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out Leptolyngbya_BulkMat/kaib_bulk_1e5.out
+blastx -db kaic_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Leptoplynga_BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out Leptolyngbya_BulkMat/kaic_bulk_1e5.out
+blastx -db cika_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Leptoplynga_BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out Leptolyngbya_BulkMat/cika_bulk_1e5.out
+blastx -db sasa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Leptoplynga_BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out Leptolyngbya_BulkMat/sasa_bulk_1e5.out
+blastx -db rpaa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Leptoplynga_BulkMat_35.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out Leptolyngbya_BulkMat/rpaa_bulk_1e5.out
 
 # need to loop this
-blastx -db kaia_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaia_micro_1e5.out
-blastx -db kaib_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaib_mirco_1e5.out
-blastx -db kaic_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/kaic_micro_1e5.out
-blastx -db cika_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/cika_micro_1e5.out
-blastx -db sasa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/sasa_micro_1e5.out
-blastx -db rpaa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out bulk/rpaa_micro_1e5.out
+blastx -db kaia_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out micro_171/kaia_micro_1e5.out
+blastx -db kaib_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out micro_171/kaib_mirco_1e5.out
+blastx -db kaic_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out micro_171/kaic_micro_1e5.out
+blastx -db cika_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out micro_171/cika_micro_1e5.out
+blastx -db sasa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out micro_171/sasa_micro_1e5.out
+blastx -db rpaa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out micro_171/rpaa_micro_1e5.out
 ```
 
 ## Old Information
