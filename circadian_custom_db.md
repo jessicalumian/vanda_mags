@@ -34,6 +34,23 @@ blastx -db sasa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapte
 blastx -db rpaa_db_out -query /Users/jessicamizzi/Documents/Work/research/chapter_2/data/Microcoleus_MP8IB2_171.fa -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out micro_171/rpaa_micro_1e5.out
 ```
 
+#### Scripts
+To make database files once reference sequence is in path
+```
+# to make custom dbs
+
+for reference_sequence in /Users/jessicamizzi/Documents/Work/research/chapter_2/custom_blast_cold_tolerance/*_reference.fa
+do
+
+# use basename for extract gene names
+
+gene=$(basename $i .db)
+
+makeblastdb -in $reference_sequence -input_type fasta -title ${gene}_db -out ${gene}_db_out -dbtype prot
+
+done
+```
+
 ## Old Information
 
 1. Run command line blast, but output is only amino acids
