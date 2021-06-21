@@ -40,13 +40,12 @@ To make database files once reference sequence is in path
 # to make custom dbs
 
 for reference_sequence in /Users/jessicamizzi/Documents/Work/research/chapter_2/custom_blast_cold_tolerance/*_reference.fa
-do
+    do
 
-# use basename for extract gene names
+    # use basename for extract gene names
+    gene=$(basename $i .db)
 
-gene=$(basename $i .db)
-
-makeblastdb -in $reference_sequence -input_type fasta -title ${gene}_db -out ${gene}_db_out -dbtype prot
+    makeblastdb -in $reference_sequence -input_type fasta -title ${gene}_db -out ${gene}_db_out -dbtype prot
 
 done
 ```
