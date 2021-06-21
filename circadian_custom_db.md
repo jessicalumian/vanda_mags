@@ -43,7 +43,7 @@ for reference_sequence in /Users/jessicamizzi/Documents/Work/research/chapter_2/
     do
 
     # use basename for extract gene names
-    gene=$(basename $i .db)
+    gene=$(basename $reference_sequence _reference.fa)
 
     makeblastdb -in $reference_sequence -input_type fasta -title ${gene}_db -out ${gene}_db_out -dbtype prot
 
