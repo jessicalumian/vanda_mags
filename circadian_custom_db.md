@@ -49,7 +49,37 @@ for reference_sequence in /Users/jessicamizzi/Documents/Work/research/chapter_2/
 
 done
 ```
+To search for genes while looping through MAGs
+```
+for MAG_sequence in /Users/jessicamizzi/Documents/Work/research/chapter_2/data/*.fa
+do
+    # use basename for MAG sequence names
+    cyano_name=$(basename $MAG_sequence .fa)
+    
+    echo ${cyano_name}
+    
+    echo ${MAG_sequence}
 
+    mkdir /Users/jessicamizzi/Documents/Work/research/chapter_2/custom_blast_cold_tolerance/${cyano_name}
+    
+    blastx -db acee_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/acee_${cyano_name}_1e5.out
+    blastx -db acef_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/acef_${cyano_name}_1e5.out
+    blastx -db csp_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/csp_${cyano_name}_1e5.out
+    blastx -db dead_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/dead_${cyano_name}_1e5.out
+    blastx -db desa_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/desa_${cyano_name}_1e5.out
+    blastx -db dnaa_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/dnaa_${cyano_name}_1e5.out
+    blastx -db gyra_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/gyra_${cyano_name}_1e5.out
+    blastx -db hupb_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/hupb_${cyano_name}_1e5.out
+    blastx -db nusa_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/nusa_${cyano_name}_1e5.out
+    blastx -db otsa_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/otsa_${cyano_name}_1e5.out
+    blastx -db pnp_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/pnp_${cyano_name}_1e5.out
+    blastx -db reca_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/reca_${cyano_name}_1e5.out
+    blastx -db rnr_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/rnr_${cyano_name}_1e5.out
+    blastx -db tig_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/tig_${cyano_name}_1e5.out
+    blastx -db yfia_db_out -query ${MAG_sequence} -evalue 1e-5 -outfmt "6 sseqid qseqid evalue pident qseq" -out ${cyano_name}/yfia_${cyano_name}_1e5.out
+
+done
+```
 ## Old Information
 
 1. Run command line blast, but output is only amino acids
