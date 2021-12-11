@@ -1,3 +1,7 @@
-# vanda_mags
+# Vanda MAGs
 
-This repo is a WIP! Markdown file has my working code, and later I'll turn it into a snakemake workflow.
+This is the code associated with my second dissertation chapter: Genomic Content of Four Novel Cyanobacteria MAGs from Lake Vanda, Antarctica and The Effect of Polar Light Cycles on Circadian Clocks. 
+
+### Chapter Abstract
+
+Cyanobacteria in polar environments face a number of environmental challenges, including cold temperatures and extreme light seasonality which has implications for the functioning of their circadian clocks. However, polar cyanobacteria are underrepresented in available genomic data, limiting opportunities to study their genetic adaptations to these challenges. This paper presents four new Antarctic cyanobacteria MAGs, bringing the total number of polar MAGs and genomes to ten. These new cyanobacteria are from microbial mats in Lake Vanda located in the McMurdo Dry Valleys in Antarctica. The four MAGs were taxonomically categorized as a Leptolyngyba, Pseudanabaena, Microcoleus, and Neosynechococcus. The sizes of these MAGs range from 2.76 Mpb – 6.07 Mbp and the bin completion ranges from 74.2% – 92.57%. Furthermore, the four novel cyanobacteria have ANIs under 90% with each other and under 77% with existing polar cyanobacteria MAGs and genomes, which demonstrates the continued need for more representation of polar cyanobacteria genomes. Analysis of the gene content of all ten polar cyanobacteria demonstrates that they have metabolic capacity for photosynthesis and various cold tolerance mechanisms. Standard circadian rhythm genes are present in the majority of cyanobacteria studied with the Leptolyngbya and Neosynechococcus containing kaiB3, a divergent homolog of kaiB.
